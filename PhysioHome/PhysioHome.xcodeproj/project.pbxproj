@@ -1,0 +1,487 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09DEE6C8BC8E033EBFC1887E /* Pods_PhysioHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */; };
+		966EA74B275DEA7E0045DC13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74A275DEA7E0045DC13 /* AppDelegate.swift */; };
+		966EA74D275DEA7E0045DC13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74C275DEA7E0045DC13 /* SceneDelegate.swift */; };
+		966EA74F275DEA7E0045DC13 /* LoginPatientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */; };
+		966EA752275DEA7E0045DC13 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966EA750275DEA7E0045DC13 /* Main.storyboard */; };
+		966EA754275DEA7F0045DC13 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 966EA753275DEA7F0045DC13 /* Assets.xcassets */; };
+		966EA757275DEA7F0045DC13 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966EA755275DEA7F0045DC13 /* LaunchScreen.storyboard */; };
+		966EA75F275DEBBD0045DC13 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 966EA75E275DEBBD0045DC13 /* GoogleService-Info.plist */; };
+		966EA764275E22ED0045DC13 /* LoginPhysioVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA763275E22ED0045DC13 /* LoginPhysioVC.swift */; };
+		966EA786275E866D0045DC13 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA785275E866D0045DC13 /* Models.swift */; };
+		966EA788275F32E60045DC13 /* PhysiotherapistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA787275F32E60045DC13 /* PhysiotherapistVC.swift */; };
+		966EA78A275F35330045DC13 /* PTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA789275F35330045DC13 /* PTCell.swift */; };
+		966EA78C275F47BB0045DC13 /* ProfilePTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA78B275F47BB0045DC13 /* ProfilePTVC.swift */; };
+		966EA78E275F48CB0045DC13 /* ProfilePTCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA78D275F48CB0045DC13 /* ProfilePTCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhysioHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		966EA747275DEA7E0045DC13 /* PhysioHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysioHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		966EA74A275DEA7E0045DC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		966EA74C275DEA7E0045DC13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPatientsVC.swift; sourceTree = "<group>"; };
+		966EA751275DEA7E0045DC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		966EA753275DEA7F0045DC13 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		966EA756275DEA7F0045DC13 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		966EA758275DEA7F0045DC13 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		966EA75E275DEBBD0045DC13 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		966EA763275E22ED0045DC13 /* LoginPhysioVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPhysioVC.swift; sourceTree = "<group>"; };
+		966EA785275E866D0045DC13 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		966EA787275F32E60045DC13 /* PhysiotherapistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhysiotherapistVC.swift; sourceTree = "<group>"; };
+		966EA789275F35330045DC13 /* PTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTCell.swift; sourceTree = "<group>"; };
+		966EA78B275F47BB0045DC13 /* ProfilePTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePTVC.swift; sourceTree = "<group>"; };
+		966EA78D275F48CB0045DC13 /* ProfilePTCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePTCell.swift; sourceTree = "<group>"; };
+		E04FAAE9BEE5F59D60FF3398 /* Pods-PhysioHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhysioHome.release.xcconfig"; path = "Target Support Files/Pods-PhysioHome/Pods-PhysioHome.release.xcconfig"; sourceTree = "<group>"; };
+		E32648FF0CE002394C13ADF2 /* Pods-PhysioHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhysioHome.debug.xcconfig"; path = "Target Support Files/Pods-PhysioHome/Pods-PhysioHome.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		966EA744275DEA7E0045DC13 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09DEE6C8BC8E033EBFC1887E /* Pods_PhysioHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1ACB69CFDEABCB6CE3D1A50D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		966EA73E275DEA7E0045DC13 = {
+			isa = PBXGroup;
+			children = (
+				966EA749275DEA7E0045DC13 /* PhysioHome */,
+				966EA748275DEA7E0045DC13 /* Products */,
+				D9E0DBC11EA58C6C70FC9265 /* Pods */,
+				1ACB69CFDEABCB6CE3D1A50D /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		966EA748275DEA7E0045DC13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				966EA747275DEA7E0045DC13 /* PhysioHome.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		966EA749275DEA7E0045DC13 /* PhysioHome */ = {
+			isa = PBXGroup;
+			children = (
+				966EA75E275DEBBD0045DC13 /* GoogleService-Info.plist */,
+				966EA761275DED3E0045DC13 /* View */,
+				966EA760275DED0E0045DC13 /* Model */,
+				966EA762275DED4D0045DC13 /* Controller */,
+				966EA753275DEA7F0045DC13 /* Assets.xcassets */,
+				966EA755275DEA7F0045DC13 /* LaunchScreen.storyboard */,
+				966EA750275DEA7E0045DC13 /* Main.storyboard */,
+				966EA758275DEA7F0045DC13 /* Info.plist */,
+			);
+			path = PhysioHome;
+			sourceTree = "<group>";
+		};
+		966EA760275DED0E0045DC13 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				966EA785275E866D0045DC13 /* Models.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		966EA761275DED3E0045DC13 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				966EA74A275DEA7E0045DC13 /* AppDelegate.swift */,
+				966EA74C275DEA7E0045DC13 /* SceneDelegate.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		966EA762275DED4D0045DC13 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */,
+				966EA763275E22ED0045DC13 /* LoginPhysioVC.swift */,
+				966EA787275F32E60045DC13 /* PhysiotherapistVC.swift */,
+				966EA789275F35330045DC13 /* PTCell.swift */,
+				966EA78B275F47BB0045DC13 /* ProfilePTVC.swift */,
+				966EA78D275F48CB0045DC13 /* ProfilePTCell.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D9E0DBC11EA58C6C70FC9265 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E32648FF0CE002394C13ADF2 /* Pods-PhysioHome.debug.xcconfig */,
+				E04FAAE9BEE5F59D60FF3398 /* Pods-PhysioHome.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		966EA746275DEA7E0045DC13 /* PhysioHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 966EA75B275DEA7F0045DC13 /* Build configuration list for PBXNativeTarget "PhysioHome" */;
+			buildPhases = (
+				AFA592EE8E1A8004D9075A1D /* [CP] Check Pods Manifest.lock */,
+				966EA743275DEA7E0045DC13 /* Sources */,
+				966EA744275DEA7E0045DC13 /* Frameworks */,
+				966EA745275DEA7E0045DC13 /* Resources */,
+				E146FC6880702A28A77F1A93 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysioHome;
+			productName = PhysioHome;
+			productReference = 966EA747275DEA7E0045DC13 /* PhysioHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		966EA73F275DEA7E0045DC13 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+				TargetAttributes = {
+					966EA746275DEA7E0045DC13 = {
+						CreatedOnToolsVersion = 13.0;
+					};
+				};
+			};
+			buildConfigurationList = 966EA742275DEA7E0045DC13 /* Build configuration list for PBXProject "PhysioHome" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 966EA73E275DEA7E0045DC13;
+			productRefGroup = 966EA748275DEA7E0045DC13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				966EA746275DEA7E0045DC13 /* PhysioHome */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		966EA745275DEA7E0045DC13 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966EA757275DEA7F0045DC13 /* LaunchScreen.storyboard in Resources */,
+				966EA75F275DEBBD0045DC13 /* GoogleService-Info.plist in Resources */,
+				966EA754275DEA7F0045DC13 /* Assets.xcassets in Resources */,
+				966EA752275DEA7E0045DC13 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		AFA592EE8E1A8004D9075A1D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PhysioHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E146FC6880702A28A77F1A93 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhysioHome/Pods-PhysioHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PhysioHome/Pods-PhysioHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PhysioHome/Pods-PhysioHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		966EA743275DEA7E0045DC13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				966EA764275E22ED0045DC13 /* LoginPhysioVC.swift in Sources */,
+				966EA78A275F35330045DC13 /* PTCell.swift in Sources */,
+				966EA78C275F47BB0045DC13 /* ProfilePTVC.swift in Sources */,
+				966EA786275E866D0045DC13 /* Models.swift in Sources */,
+				966EA74F275DEA7E0045DC13 /* LoginPatientsVC.swift in Sources */,
+				966EA78E275F48CB0045DC13 /* ProfilePTCell.swift in Sources */,
+				966EA788275F32E60045DC13 /* PhysiotherapistVC.swift in Sources */,
+				966EA74B275DEA7E0045DC13 /* AppDelegate.swift in Sources */,
+				966EA74D275DEA7E0045DC13 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		966EA750275DEA7E0045DC13 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966EA751275DEA7E0045DC13 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		966EA755275DEA7F0045DC13 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				966EA756275DEA7F0045DC13 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		966EA759275DEA7F0045DC13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		966EA75A275DEA7F0045DC13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		966EA75C275DEA7F0045DC13 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E32648FF0CE002394C13ADF2 /* Pods-PhysioHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHBQU77Z37;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhysioHome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraM.PhysioHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		966EA75D275DEA7F0045DC13 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04FAAE9BEE5F59D60FF3398 /* Pods-PhysioHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = UHBQU77Z37;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PhysioHome/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.saraM.PhysioHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		966EA742275DEA7E0045DC13 /* Build configuration list for PBXProject "PhysioHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966EA759275DEA7F0045DC13 /* Debug */,
+				966EA75A275DEA7F0045DC13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		966EA75B275DEA7F0045DC13 /* Build configuration list for PBXNativeTarget "PhysioHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				966EA75C275DEA7F0045DC13 /* Debug */,
+				966EA75D275DEA7F0045DC13 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 966EA73F275DEA7E0045DC13 /* Project object */;
+}
