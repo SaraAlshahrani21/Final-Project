@@ -11,6 +11,7 @@ class PTCell : UICollectionViewCell {
     
     
     
+    
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var name: UILabel!
     @IBOutlet weak var dis: UILabel!
@@ -27,4 +28,5 @@ class PTCell : UICollectionViewCell {
         rating.text = ptS.rating
         indrxPath = indexPath
     }
+    
 }

@@ -6,13 +6,52 @@
 //
 
 import UIKit
+import Firebase
 
 class LoginPatientsVC: UIViewController {
 
-   
-    @IBOutlet weak var Email: UITextField!
-    @IBOutlet weak var Password: UITextField!
-    @IBAction func SignIn(_ sender: Any) {
+    @IBOutlet var txtEmail: UITextField!
+    @IBOutlet var txtPassword: UITextField!
+    @IBOutlet var lblStatus: UILabel!
+    
+    
+    
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
     }
-}
+    
+    
 
+    @IBAction func login(_ sender: Any) {
+        let email = txtEmail.text!
+        let password = txtPassword.text!
+
+        Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
+            guard let strongSelf = self else { return }
+            if(error != nil) {
+                strongSelf.lblStatus.text = "Error, check username and password"
+                print(error as Any)
+                return
+            }
+            strongSelf.lblStatus.text = "Login sucesss for email \(email)"
+        }
+    }
+    
+    @IBAction func createAccount(_ sender: Any) {
+        let email = txtEmail.text!
+        let password = txtPassword.text!
+        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
+            if(error != nil) {
+                self.lblStatus.text = "Error"
+                print(error as Any)
+                return
+            }
+            self.lblStatus.text = "User created!"
+        }
+    }
+    
+    
+}

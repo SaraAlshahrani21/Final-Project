@@ -19,7 +19,7 @@ class ProfilePTVC : UIViewController {
         disPT.text = FromVC1?.dis
         imagePT.image = FromVC1!.logo
        
-       
+        TableVC.rowHeight = 200
         TableVC.delegate = self
         TableVC.dataSource = self
     }
