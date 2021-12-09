@@ -45,9 +45,25 @@ extension ProfilePTVC : UITableViewDelegate, UITableViewDataSource {
         cell.imageSession.image = PP.logo
         cell.priceSession.text = PP.price
         cell.timeSession.text = PP.time
-        cell.numberOfSession.text = "\(PP.numberOfsession)"
+        cell.numberOfSession.text = PP.numberOfsession
        
         return cell
     }
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+       let PP = FromVC1!.sessions[indexPath.row]
+       
+        
+        performSegue(withIdentifier: "show_",
+                     sender: PP)
+    }
+    override func prepare(for segue:
+           UIStoryboardSegue, sender: Any?) {
+            super.prepare(for: segue, sender: sender)
+        
+        let vc2 = segue.destination as! ReservationVC
+        
+        vc2.restFromVC1 = sender as? Session
+    }
+   
 }

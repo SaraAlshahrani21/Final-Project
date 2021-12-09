@@ -130,8 +130,8 @@
 				966EA763275E22ED0045DC13 /* LoginPhysioVC.swift */,
 				966EA787275F32E60045DC13 /* PhysiotherapistVC.swift */,
 				966EA78B275F47BB0045DC13 /* ProfilePTVC.swift */,
-				96711BFE27608EEC00535A66 /* AppointmentVC.swift */,
 				96711C0027608F0B00535A66 /* ReservationVC.swift */,
+				96711BFE27608EEC00535A66 /* AppointmentVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

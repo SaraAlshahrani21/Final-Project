@@ -8,7 +8,7 @@
 import UIKit
 
 class ProfilePTCell :UITableViewCell {
-    
+    var FromVC1: PT?
     
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var imageSession: UIImageView!
@@ -16,6 +16,6 @@ class ProfilePTCell :UITableViewCell {
     @IBOutlet weak var priceSession: UILabel!
     @IBOutlet weak var numberOfSession: UILabel!
     @IBAction func addsession(_ sender: Any) {
-        
     }
-}
+    }
+
