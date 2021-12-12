@@ -12,6 +12,14 @@ import FirebaseFirestore
     
     class ReservationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate, UIPickerViewDataSource {
         
+        static let shared = ReservationVC()
+        let patientsCollection = Firestore.firestore().collection("users")
+        
+        // Delete Student
+            func deleteAppointment(patientId: String) {
+                patientsCollection.document(patientId).delete()
+            }
+        
         var restFromVC1: Session?
       //Add Picker View
       override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -41,6 +49,9 @@ import FirebaseFirestore
         @IBOutlet weak var phoneTF: UITextField!
         @IBOutlet weak var locationTF: UITextField!
         @IBOutlet weak var gender: UITextField!
+        @IBOutlet weak var reservation: UIButton!
+        
+        
         @IBOutlet weak var scheduler: UIDatePicker!
         let genderr = UIPickerView()
         var arrgender = [
@@ -66,8 +77,9 @@ import FirebaseFirestore
           }
         
         
-        @IBAction func reservation(_ sender: Any) {
+        @IBAction func reservation(_ sender: UIButton) {
             haB()
+            sender.shake()
         }
         func haB() {
                 guard let currentUserID = Auth.auth().currentUser?.uid else {return}
@@ -77,7 +89,8 @@ import FirebaseFirestore
                     "age" :ageTF.text as Any,
                     "phone" :phoneTF.text as Any,
                     "gender" :gender.text as Any,
-//                    "data" :scheduler.date as Any,
+                    "location" : locationTF.text as Any ,
+                    "date" :scheduler.date as Any,
                 ],merge: true)
                 let alert1 = UIAlertController(
                     title: ("Wonderful"),
@@ -86,7 +99,7 @@ import FirebaseFirestore
                 alert1.addAction(
                     UIAlertAction(
                         title: "OK",
-                        style: .default ,
+                        style: .cancel ,
                         handler: { action in
                             print("OK")
                         }
@@ -98,6 +111,7 @@ import FirebaseFirestore
                     style: .default,
                     handler: { action in
                     print("OK")
+                        self.performSegue(withIdentifier: "GoToAppointments", sender: AppointmentVC.self())
                    }
                 )
             )
@@ -106,6 +120,9 @@ import FirebaseFirestore
                 
         override func viewDidLoad() {
          super.viewDidLoad()
+            view.backgroundColor = UIColor(named: "backgroundColor")
+            setupButtons()
+            
             
             TitleSession.text = restFromVC1?.title
             timeSession.text = restFromVC1?.time
@@ -137,12 +154,13 @@ import FirebaseFirestore
                     self.ageTF.text = doucument?.data()?["age"] as? String
                     self.phoneTF.text = doucument?.data()?["phone"] as? String
                     self.gender.text = doucument?.data()?["gender"] as? String
-                   // self.scheduler.date = doucument?.data()?["data"] as! Date
+                    self.locationTF.text = doucument?.data()?["location"] as? String
+                    self.scheduler.date = doucument?.data()?["date"] as? Date ?? Date()
                 }
-            
-            
-   
+        }
         
+        func setupButtons() {
+            reservation.layer.cornerRadius = 8
         }
           override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
@@ -151,3 +169,5 @@ import FirebaseFirestore
             let vc = segue.destination as? AppointmentVC
           }
 }
+
+

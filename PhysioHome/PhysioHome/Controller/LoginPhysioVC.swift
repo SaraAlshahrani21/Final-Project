@@ -14,4 +14,10 @@ class LoginPhysioVC: UIViewController {
     @IBOutlet weak var PasswordPT: UITextField!
     @IBAction func SignInPT(_ sender: Any) {
     }
+    
+    // Login and rigester physiotherapist
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        view.backgroundColor = UIColor(named: "backgroundColor")
+    }
 }

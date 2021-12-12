@@ -13,6 +13,8 @@ class ProfilePTVC : UIViewController {
     
     override func viewDidLoad() {
      super.viewDidLoad()
+       
+        view.backgroundColor = UIColor(named: "backgroundColor")
         
         namePT.text = FromVC1?.name
         ratingPT.text = FromVC1!.rating

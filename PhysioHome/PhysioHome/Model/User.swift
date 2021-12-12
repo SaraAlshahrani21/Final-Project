@@ -13,5 +13,6 @@ struct User {
     let age : String
     let phone : String
     let gender : String
-//    let data : Date
+    let date : Date
+    let location : String
 }

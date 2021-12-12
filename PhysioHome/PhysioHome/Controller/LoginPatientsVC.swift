@@ -9,26 +9,27 @@ import UIKit
 import Firebase
 
 class LoginPatientsVC: UIViewController {
-
+    
     @IBOutlet var txtEmail: UITextField!
     @IBOutlet var txtPassword: UITextField!
     @IBOutlet var lblStatus: UILabel!
-    
+    @IBOutlet weak var login: UIButton!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        view.backgroundColor = UIColor(named: "backgroundColor")
     }
     
-    
-
+   
+    // LogIn users
     @IBAction func login(_ sender: Any) {
+        
         let email = txtEmail.text!
         let password = txtPassword.text!
-
+        
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
             guard let strongSelf = self else { return }
             if(error != nil) {
@@ -38,8 +39,10 @@ class LoginPatientsVC: UIViewController {
             }
             strongSelf.lblStatus.text = "Login sucesss for email \(email)"
         }
+        
     }
     
+    // SignUp users
     @IBAction func createAccount(_ sender: Any) {
         let email = txtEmail.text!
         let password = txtPassword.text!
@@ -55,3 +58,4 @@ class LoginPatientsVC: UIViewController {
     
     
 }
+

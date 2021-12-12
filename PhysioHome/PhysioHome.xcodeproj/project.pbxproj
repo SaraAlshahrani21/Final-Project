@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		09DEE6C8BC8E033EBFC1887E /* Pods_PhysioHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */; };
+		96677DDA2765D45300A20913 /* UIbuttonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DD92765D45300A20913 /* UIbuttonExtention.swift */; };
+		96677DDC276617F200A20913 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DDB276617F200A20913 /* MapVC.swift */; };
 		966EA74B275DEA7E0045DC13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74A275DEA7E0045DC13 /* AppDelegate.swift */; };
 		966EA74D275DEA7E0045DC13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74C275DEA7E0045DC13 /* SceneDelegate.swift */; };
 		966EA74F275DEA7E0045DC13 /* LoginPatientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */; };
@@ -24,10 +26,13 @@
 		966EA790275F54920045DC13 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA78F275F54920045DC13 /* User.swift */; };
 		96711BFF27608EEC00535A66 /* AppointmentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96711BFE27608EEC00535A66 /* AppointmentVC.swift */; };
 		96711C0127608F0B00535A66 /* ReservationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96711C0027608F0B00535A66 /* ReservationVC.swift */; };
+		96711C032761E56200535A66 /* AppointmentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96711C022761E56200535A66 /* AppointmentCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhysioHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		96677DD92765D45300A20913 /* UIbuttonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIbuttonExtention.swift; sourceTree = "<group>"; };
+		96677DDB276617F200A20913 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		966EA747275DEA7E0045DC13 /* PhysioHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysioHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966EA74A275DEA7E0045DC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		966EA74C275DEA7E0045DC13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +51,7 @@
 		966EA78F275F54920045DC13 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		96711BFE27608EEC00535A66 /* AppointmentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentVC.swift; sourceTree = "<group>"; };
 		96711C0027608F0B00535A66 /* ReservationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReservationVC.swift; sourceTree = "<group>"; };
+		96711C022761E56200535A66 /* AppointmentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppointmentCell.swift; sourceTree = "<group>"; };
 		E04FAAE9BEE5F59D60FF3398 /* Pods-PhysioHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhysioHome.release.xcconfig"; path = "Target Support Files/Pods-PhysioHome/Pods-PhysioHome.release.xcconfig"; sourceTree = "<group>"; };
 		E32648FF0CE002394C13ADF2 /* Pods-PhysioHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhysioHome.debug.xcconfig"; path = "Target Support Files/Pods-PhysioHome/Pods-PhysioHome.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +125,7 @@
 			children = (
 				966EA789275F35330045DC13 /* PTCell.swift */,
 				966EA78D275F48CB0045DC13 /* ProfilePTCell.swift */,
+				96711C022761E56200535A66 /* AppointmentCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -132,6 +139,8 @@
 				966EA78B275F47BB0045DC13 /* ProfilePTVC.swift */,
 				96711C0027608F0B00535A66 /* ReservationVC.swift */,
 				96711BFE27608EEC00535A66 /* AppointmentVC.swift */,
+				96677DD92765D45300A20913 /* UIbuttonExtention.swift */,
+				96677DDB276617F200A20913 /* MapVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -263,6 +272,7 @@
 			files = (
 				966EA764275E22ED0045DC13 /* LoginPhysioVC.swift in Sources */,
 				96711C0127608F0B00535A66 /* ReservationVC.swift in Sources */,
+				96711C032761E56200535A66 /* AppointmentCell.swift in Sources */,
 				966EA78A275F35330045DC13 /* PTCell.swift in Sources */,
 				966EA78C275F47BB0045DC13 /* ProfilePTVC.swift in Sources */,
 				96711BFF27608EEC00535A66 /* AppointmentVC.swift in Sources */,
@@ -270,8 +280,10 @@
 				966EA74F275DEA7E0045DC13 /* LoginPatientsVC.swift in Sources */,
 				966EA78E275F48CB0045DC13 /* ProfilePTCell.swift in Sources */,
 				966EA788275F32E60045DC13 /* PhysiotherapistVC.swift in Sources */,
+				96677DDC276617F200A20913 /* MapVC.swift in Sources */,
 				966EA74B275DEA7E0045DC13 /* AppDelegate.swift in Sources */,
 				966EA790275F54920045DC13 /* User.swift in Sources */,
+				96677DDA2765D45300A20913 /* UIbuttonExtention.swift in Sources */,
 				966EA74D275DEA7E0045DC13 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -33,7 +33,6 @@ class PhysiotherapistVC: UIViewController,UICollectionViewDelegate, UICollection
         
     }
     
-    
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
         return 0
         
@@ -90,6 +89,8 @@ class PhysiotherapistVC: UIViewController,UICollectionViewDelegate, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = UIColor(named: "backgroundColor")
         
         picCV.delegate = self
         picCV.dataSource = self
