@@ -10,22 +10,24 @@ import FirebaseFirestore
 import Firebase
 
 class AppointmentVC: UIViewController{
-    var users = [User]()
     
+    var users = [User]()
     
     @IBOutlet weak var table: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         
+        
         view.backgroundColor = UIColor(named: "backgroundColor")
         table.delegate = self
         table.dataSource = self
         table.rowHeight = 170
         self.dataRead()
-
+        
     }
 }
+
+// extension of class
 extension AppointmentVC : UITableViewDelegate, UITableViewDataSource {
     
     
@@ -49,15 +51,15 @@ extension AppointmentVC : UITableViewDelegate, UITableViewDataSource {
     
     // delete Appointment
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        if editingStyle == .delete {
+            ReservationVC.shared.deleteAppointment(patientId: users[indexPath.row].id)
             
-            if editingStyle == .delete {
-                ReservationVC.shared.deleteAppointment(patientId: users[indexPath.row].id)
-    
-            }
+        }
     }
-   
-                
-   // Add Appointmaent
+    
+    
+    // Add Appointmaent
     func dataRead(){
         Firestore.firestore().collection("users").whereField("id", isEqualTo: Auth.auth().currentUser?.uid).addSnapshotListener { [self] snapshot, error in
             if error != nil {
@@ -71,7 +73,7 @@ extension AppointmentVC : UITableViewDelegate, UITableViewDataSource {
                 let data = document.data()
                 let user = User(
                     id: (data["id"] as? String) ?? "",
-                  name: (data["name"] as? String) ?? "",
+                    name: (data["name"] as? String) ?? "",
                     age: (data["age"] as? String) ?? "",
                     phone:(data["phone"] as? String) ?? "",
                     gender:(data["gender"] as? String) ?? "",
@@ -82,7 +84,7 @@ extension AppointmentVC : UITableViewDelegate, UITableViewDataSource {
             }
             
             self.table.reloadData()
-
+            
         }
     }
 }

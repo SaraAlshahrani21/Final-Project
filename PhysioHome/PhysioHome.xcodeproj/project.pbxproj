@@ -10,6 +10,7 @@
 		09DEE6C8BC8E033EBFC1887E /* Pods_PhysioHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */; };
 		96677DDA2765D45300A20913 /* UIbuttonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DD92765D45300A20913 /* UIbuttonExtention.swift */; };
 		96677DDC276617F200A20913 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DDB276617F200A20913 /* MapVC.swift */; };
+		96677DDE27673D4B00A20913 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DDD27673D4B00A20913 /* RegisterVC.swift */; };
 		966EA74B275DEA7E0045DC13 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74A275DEA7E0045DC13 /* AppDelegate.swift */; };
 		966EA74D275DEA7E0045DC13 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74C275DEA7E0045DC13 /* SceneDelegate.swift */; };
 		966EA74F275DEA7E0045DC13 /* LoginPatientsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */; };
@@ -33,6 +34,7 @@
 		1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhysioHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		96677DD92765D45300A20913 /* UIbuttonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIbuttonExtention.swift; sourceTree = "<group>"; };
 		96677DDB276617F200A20913 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
+		96677DDD27673D4B00A20913 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
 		966EA747275DEA7E0045DC13 /* PhysioHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysioHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		966EA74A275DEA7E0045DC13 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		966EA74C275DEA7E0045DC13 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		966EA762275DED4D0045DC13 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				96677DDD27673D4B00A20913 /* RegisterVC.swift */,
 				966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */,
 				966EA763275E22ED0045DC13 /* LoginPhysioVC.swift */,
 				966EA787275F32E60045DC13 /* PhysiotherapistVC.swift */,
@@ -279,6 +282,7 @@
 				966EA786275E866D0045DC13 /* PT.swift in Sources */,
 				966EA74F275DEA7E0045DC13 /* LoginPatientsVC.swift in Sources */,
 				966EA78E275F48CB0045DC13 /* ProfilePTCell.swift in Sources */,
+				96677DDE27673D4B00A20913 /* RegisterVC.swift in Sources */,
 				966EA788275F32E60045DC13 /* PhysiotherapistVC.swift in Sources */,
 				96677DDC276617F200A20913 /* MapVC.swift in Sources */,
 				966EA74B275DEA7E0045DC13 /* AppDelegate.swift in Sources */,

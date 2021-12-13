@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Register Vc-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhysioHome" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RegisterVc" customModule="PhysioHome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -74,6 +74,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="oDA-QC-ivl"/>
+                    <connections>
+                        <outlet property="image" destination="H4U-8Z-dxn" id="EWL-Ky-bFj"/>
+                        <outlet property="registerPT" destination="60t-Nn-WDg" id="xjl-cr-rnr"/>
+                        <outlet property="registerPatients" destination="6WM-li-dKu" id="Xwa-Su-Cb8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -427,7 +432,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="ow9-w2-3SY"/>
                     <connections>
-                        <outlet property="lblStatus" destination="xix-Uj-nRd" id="IbL-dC-0At"/>
+                        <outlet property="lable" destination="xix-Uj-nRd" id="iV4-Yj-Z1O"/>
                         <outlet property="login" destination="vxJ-io-Dmv" id="YdR-ED-N5K"/>
                         <outlet property="txtEmail" destination="7Fs-3c-6Hu" id="4KS-8n-foM"/>
                         <outlet property="txtPassword" destination="6hL-NQ-L2u" id="c4y-WA-1Wg"/>

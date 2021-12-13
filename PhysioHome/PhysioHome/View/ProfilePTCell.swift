@@ -10,6 +10,8 @@ import UIKit
 class ProfilePTCell :UITableViewCell {
     var FromVC1: PT?
     
+    // Profile Physiotherapist Cell
+    
     @IBOutlet weak var title: UILabel!
     @IBOutlet weak var imageSession: UIImageView!
     @IBOutlet weak var timeSession: UILabel!
@@ -17,5 +19,5 @@ class ProfilePTCell :UITableViewCell {
     @IBOutlet weak var numberOfSession: UILabel!
     @IBAction func addsession(_ sender: Any) {
     }
-    }
+}
 

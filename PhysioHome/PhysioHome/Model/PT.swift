@@ -12,6 +12,8 @@ import UIKit
 
 var purchased: Array<PT> = []
 
+
+//Physiotherapist struct
 struct PT {
     let name : String
     let dis : String
@@ -19,6 +21,8 @@ struct PT {
     let logo : UIImage?
     let sessions: Array<Session>
 }
+
+//session struct
 struct Session {
     let title : String
     let logo : UIImage?
@@ -26,6 +30,9 @@ struct Session {
     let price : String
     let numberOfsession : String
 }
+
+
+
 
 
 var ptS : Array<PT> = [

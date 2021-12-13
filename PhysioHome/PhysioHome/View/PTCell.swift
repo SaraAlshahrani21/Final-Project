@@ -10,7 +10,7 @@ import UIKit
 class PTCell : UICollectionViewCell {
     
     
-    
+    // physiotherapist Cell
     
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var name: UILabel!

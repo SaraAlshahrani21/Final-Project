@@ -13,14 +13,14 @@ class MapVC: UIViewController {
     
     private let locationManager = CLLocationManager()
     private var currentCoordinate: CLLocationCoordinate2D?
-
+    
     @IBOutlet weak var mapView: MKMapView!
     override func viewDidLoad() {
         super.viewDidLoad()
         configureLocationServices()
         // Do any additional setup after loading the view, typically from a nib.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,7 +33,7 @@ class MapVC: UIViewController {
         if status == .notDetermined {
             locationManager.requestAlwaysAuthorization()
         } else if status == .authorizedAlways || status == .authorizedWhenInUse {
-           beginLocationUpdates(locationManager: locationManager)
+            beginLocationUpdates(locationManager: locationManager)
         }
     }
     
@@ -59,12 +59,12 @@ extension MapVC: CLLocationManagerDelegate {
         if currentCoordinate == nil {
             zoomToLatestLocation(with: latestLocation.coordinate)
         }
-    
+        
         currentCoordinate = latestLocation.coordinate
     }
     
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-       print("The status changed")
+        print("The status changed")
         if status == .authorizedAlways || status == .authorizedWhenInUse {
             beginLocationUpdates(locationManager: manager)
         }

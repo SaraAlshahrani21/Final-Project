@@ -7,6 +7,8 @@
 
 import Foundation
 
+
+//User struct
 struct User {
     let id : String
     let name : String

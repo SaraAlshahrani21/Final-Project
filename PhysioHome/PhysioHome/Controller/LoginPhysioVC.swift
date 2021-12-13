@@ -15,7 +15,6 @@ class LoginPhysioVC: UIViewController {
     @IBAction func SignInPT(_ sender: Any) {
     }
     
-    // Login and rigester physiotherapist
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "backgroundColor")

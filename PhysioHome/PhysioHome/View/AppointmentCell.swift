@@ -11,6 +11,7 @@ import UIKit
 class AppointmentCell:UITableViewCell {
     
     
+    
     @IBOutlet weak var nameC: UILabel!
     @IBOutlet weak var ageC: UILabel!
     @IBOutlet weak var phoneC: UILabel!

@@ -12,6 +12,7 @@ import UIKit
 
 extension UIButton {
     
+    //Animation for button
     func shake() {
         let shake = CABasicAnimation(keyPath: "position")
         shake.duration = 0.1
@@ -30,4 +31,4 @@ extension UIButton {
         layer.add(shake, forKey: nil)
         
     }
-    }
+}
