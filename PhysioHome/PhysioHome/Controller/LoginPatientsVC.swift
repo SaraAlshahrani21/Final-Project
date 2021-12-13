@@ -10,10 +10,10 @@ import Firebase
 
 class LoginPatientsVC: UIViewController {
     
+    @IBOutlet weak var signup: UIButton!
     @IBOutlet var txtEmail: UITextField!
     @IBOutlet var txtPassword: UITextField!
     @IBOutlet weak var login: UIButton!
-    
     @IBOutlet weak var lable: UILabel!
     
     
@@ -36,9 +36,11 @@ class LoginPatientsVC: UIViewController {
           }
           Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
+                self.lable.text = "Error,please click on SignUp"
               print(error as Any)
               return
             }
+              self.performSegue(withIdentifier: "12345", sender:nil)
           }
           func alertUserLoginError() {
             let alert = UIAlertController(title: "❤︎", message: "Please enter your Email & Password To LogIn", preferredStyle: .alert)
@@ -62,7 +64,7 @@ class LoginPatientsVC: UIViewController {
 //    }
     
     // SignUp users
-func createAccount(_ sender: Any) {
+    @IBAction func creataccount(_ sender: Any) {
         let email = txtEmail.text!
         let password = txtPassword.text!
     

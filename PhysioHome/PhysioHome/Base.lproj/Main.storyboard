@@ -188,7 +188,6 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Sign In"/>
                                 <connections>
-                                    <action selector="SignIn:" destination="jBo-Io-ONh" eventType="touchUpInside" id="xtH-RQ-qkx"/>
                                     <action selector="SignInPT:" destination="Xyv-gH-TeX" eventType="touchUpInside" id="zIw-b3-QlQ"/>
                                 </connections>
                             </button>
@@ -377,7 +376,6 @@
                                 <state key="normal" title="Sign In"/>
                                 <connections>
                                     <action selector="login:" destination="jBo-Io-ONh" eventType="touchUpInside" id="hnv-cs-Ivf"/>
-                                    <segue destination="mvJ-32-tJz" kind="show" id="U09-3U-DzW"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jg7-LS-efE">
@@ -388,11 +386,11 @@
                                     <color key="titleColor" red="0.062776028629999994" green="0.20878844129999999" blue="0.2298374369" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="createAccount:" destination="jBo-Io-ONh" eventType="touchUpInside" id="B07-bh-5zg"/>
+                                    <action selector="creataccount:" destination="jBo-Io-ONh" eventType="touchUpInside" id="HjS-F5-syG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="status" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xix-Uj-nRd">
-                                <rect key="frame" x="16" y="770" width="382" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xix-Uj-nRd">
+                                <rect key="frame" x="16" y="770" width="382" height="0.0"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -434,8 +432,10 @@
                     <connections>
                         <outlet property="lable" destination="xix-Uj-nRd" id="iV4-Yj-Z1O"/>
                         <outlet property="login" destination="vxJ-io-Dmv" id="YdR-ED-N5K"/>
+                        <outlet property="signup" destination="jg7-LS-efE" id="fcl-Fb-zjY"/>
                         <outlet property="txtEmail" destination="7Fs-3c-6Hu" id="4KS-8n-foM"/>
                         <outlet property="txtPassword" destination="6hL-NQ-L2u" id="c4y-WA-1Wg"/>
+                        <segue destination="mvJ-32-tJz" kind="show" identifier="12345" id="E6m-fI-29s"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oIH-Jd-BHN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

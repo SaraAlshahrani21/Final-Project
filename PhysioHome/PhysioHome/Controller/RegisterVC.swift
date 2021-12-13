@@ -15,7 +15,7 @@ class RegisterVc: UIViewController{
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var registerPatients: UIButton!
     @IBOutlet weak var registerPT: UIButton!
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,11 +31,11 @@ class RegisterVc: UIViewController{
         
         view.isUserInteractionEnabled = true
     }
+    
+    
+    @objc func background() {
         
-        
-@objc func background() {
-   
-    view.backgroundColor = UIColor (named: "background")
-}
-
+        view.backgroundColor = UIColor (named: "background")
+    }
+    
 }
