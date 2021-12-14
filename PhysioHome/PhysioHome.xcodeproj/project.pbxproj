@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		09DEE6C8BC8E033EBFC1887E /* Pods_PhysioHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */; };
+		962488342767B62B00480B79 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 962488362767B62B00480B79 /* Localizable.strings */; };
+		96248839276873F500480B79 /* RegisterPTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96248838276873F500480B79 /* RegisterPTVC.swift */; };
+		9624883B2768807000480B79 /* RegisterPhysiotherapistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9624883A2768807000480B79 /* RegisterPhysiotherapistVC.swift */; };
 		96677DDA2765D45300A20913 /* UIbuttonExtention.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DD92765D45300A20913 /* UIbuttonExtention.swift */; };
 		96677DDC276617F200A20913 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DDB276617F200A20913 /* MapVC.swift */; };
 		96677DDE27673D4B00A20913 /* RegisterVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96677DDD27673D4B00A20913 /* RegisterVC.swift */; };
@@ -32,6 +35,12 @@
 
 /* Begin PBXFileReference section */
 		1D3245203FEDD9521A7905E8 /* Pods_PhysioHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhysioHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		962488302767B51100480B79 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		962488312767B51100480B79 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		962488352767B62B00480B79 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		962488372767B69500480B79 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		96248838276873F500480B79 /* RegisterPTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPTVC.swift; sourceTree = "<group>"; };
+		9624883A2768807000480B79 /* RegisterPhysiotherapistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPhysiotherapistVC.swift; sourceTree = "<group>"; };
 		96677DD92765D45300A20913 /* UIbuttonExtention.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIbuttonExtention.swift; sourceTree = "<group>"; };
 		96677DDB276617F200A20913 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
 		96677DDD27673D4B00A20913 /* RegisterVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterVC.swift; sourceTree = "<group>"; };
@@ -136,14 +145,17 @@
 			isa = PBXGroup;
 			children = (
 				96677DDD27673D4B00A20913 /* RegisterVC.swift */,
-				966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */,
+				96248838276873F500480B79 /* RegisterPTVC.swift */,
 				966EA763275E22ED0045DC13 /* LoginPhysioVC.swift */,
+				966EA74E275DEA7E0045DC13 /* LoginPatientsVC.swift */,
+				9624883A2768807000480B79 /* RegisterPhysiotherapistVC.swift */,
 				966EA787275F32E60045DC13 /* PhysiotherapistVC.swift */,
 				966EA78B275F47BB0045DC13 /* ProfilePTVC.swift */,
 				96711C0027608F0B00535A66 /* ReservationVC.swift */,
 				96711BFE27608EEC00535A66 /* AppointmentVC.swift */,
 				96677DD92765D45300A20913 /* UIbuttonExtention.swift */,
 				96677DDB276617F200A20913 /* MapVC.swift */,
+				962488362767B62B00480B79 /* Localizable.strings */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -201,6 +213,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 966EA73E275DEA7E0045DC13;
 			productRefGroup = 966EA748275DEA7E0045DC13 /* Products */;
@@ -217,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				962488342767B62B00480B79 /* Localizable.strings in Resources */,
 				966EA757275DEA7F0045DC13 /* LaunchScreen.storyboard in Resources */,
 				966EA75F275DEBBD0045DC13 /* GoogleService-Info.plist in Resources */,
 				966EA754275DEA7F0045DC13 /* Assets.xcassets in Resources */,
@@ -273,6 +287,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9624883B2768807000480B79 /* RegisterPhysiotherapistVC.swift in Sources */,
+				96248839276873F500480B79 /* RegisterPTVC.swift in Sources */,
 				966EA764275E22ED0045DC13 /* LoginPhysioVC.swift in Sources */,
 				96711C0127608F0B00535A66 /* ReservationVC.swift in Sources */,
 				96711C032761E56200535A66 /* AppointmentCell.swift in Sources */,
@@ -295,10 +311,20 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		962488362767B62B00480B79 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				962488352767B62B00480B79 /* ar */,
+				962488372767B69500480B79 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 		966EA750275DEA7E0045DC13 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				966EA751275DEA7E0045DC13 /* Base */,
+				962488312767B51100480B79 /* ar */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -307,6 +333,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				966EA756275DEA7F0045DC13 /* Base */,
+				962488302767B51100480B79 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -318,6 +345,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -379,6 +407,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";

@@ -1,0 +1,42 @@
+/* 
+  Localizable.strings
+  PhysioHome
+
+  Created by Sara M on 09/05/1443 AH.
+  
+*/
+
+// RegisterVC
+"register" = "Register as a Physiotherapist 🧑🏻‍⚕️" ;
+"Register" = "Register as patients ?" ;
+"welcome" = "Welcome" ;
+
+//RegisterPTVC
+"new" = "New Registration" ;
+"login" = "Login" ;
+
+//LoginPhysioVC
+"email" = "Email" ;
+"password" = "Password" ;
+"wolcome" = "Welcome To PhysioHome" ;
+"sign" = "Sign In" ;
+
+//RegisterPhysiotherapistVC
+"Reg" = "Registration of a physiotherapist ." ;
+"dis" = "If you wish to join the family of the “PhysioHome” application, please send an e-mail message containing the following data" ;
+"Nam" = "Name :" ;
+"Emai" = "Email :" ;
+"Ph" = "Phone :" ;
+"Please" = "Please contact via e-mail" ;
+"eemm" = "Salshahrani153@gmail.com" ;
+
+//LoginPatientsVC
+"mail" = "Email" ;
+"pass" = "Password" ;
+"ss" = "Sign In" ;
+"SS" = "SignUp" ;
+"error" = "Error,please click on SignUp" ;
+"enter" = "Please enter your Email & Password To LogIn" ;
+"ok" = "OK" ;
+"ent" = "Please enter your Email & Password To signUp" ;
+

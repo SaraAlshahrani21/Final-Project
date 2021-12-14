@@ -12,6 +12,7 @@ import UIKit
 class RegisterVc: UIViewController{
     
     
+    @IBOutlet weak var welcomlbl: UILabel!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var registerPatients: UIButton!
     @IBOutlet weak var registerPT: UIButton!
@@ -20,6 +21,13 @@ class RegisterVc: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = UIColor(named: "backgroundColor")
+      
+        //localizable
+        welcomlbl.text = NSLocalizedString("welcome", comment: "")
+        registerPatients.setTitle(NSLocalizedString("Register", comment: ""), for: .normal)
+        registerPT.setTitle(NSLocalizedString("register", comment: ""), for: .normal)
+        
+        
         
         //gesture recognizer page
         let tap = UITapGestureRecognizer(

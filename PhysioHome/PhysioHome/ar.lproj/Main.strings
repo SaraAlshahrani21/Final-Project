@@ -1,0 +1,150 @@
+
+/* Class = "UILabel"; text = "Registration of a physiotherapist ."; ObjectID = "1R8-xc-sxY"; */
+"1R8-xc-sxY.text" = "Registration of a physiotherapist .";
+
+/* Class = "UIButton"; normalTitle = "New Registration "; ObjectID = "3lb-k0-IR3"; */
+"3lb-k0-IR3.normalTitle" = "New Registration ";
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "5cp-bJ-jJd"; */
+"5cp-bJ-jJd.normalTitle" = "Login";
+
+/* Class = "UIButton"; normalTitle = "Register as a Physiotherapist 🧑🏻‍⚕️"; ObjectID = "60t-Nn-WDg"; */
+"60t-Nn-WDg.normalTitle" = "Register as a Physiotherapist 🧑🏻‍⚕️";
+
+/* Class = "UILabel"; text = "rating"; ObjectID = "63N-sD-8za"; */
+"63N-sD-8za.text" = "rating";
+
+/* Class = "UIButton"; normalTitle = "Register as patients ?"; ObjectID = "6WM-li-dKu"; */
+"6WM-li-dKu.normalTitle" = "Register as patients ?";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "6hL-NQ-L2u"; */
+"6hL-NQ-L2u.placeholder" = "Password";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "7Fs-3c-6Hu"; */
+"7Fs-3c-6Hu.placeholder" = "Email";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "7Yd-r2-6ka"; */
+"7Yd-r2-6ka.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Welcome To PhysioHome"; ObjectID = "901-RG-nAM"; */
+"901-RG-nAM.text" = "Welcome To PhysioHome";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9Q0-eb-O2x"; */
+"9Q0-eb-O2x.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9QB-Lp-PYq"; */
+"9QB-Lp-PYq.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "9nv-X0-aaX"; */
+"9nv-X0-aaX.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "AIg-qg-PZp"; */
+"AIg-qg-PZp.text" = "Label";
+
+/* Class = "UILabel"; text = "Name :                                                                                                "; ObjectID = "BJD-JJ-Ger"; */
+"BJD-JJ-Ger.text" = "Name :                                                                                                ";
+
+/* Class = "UITextField"; placeholder = "Password"; ObjectID = "BRk-ot-0rz"; */
+"BRk-ot-0rz.placeholder" = "Password";
+
+/* Class = "UILabel"; text = "Email :"; ObjectID = "Bht-jV-WZW"; */
+"Bht-jV-WZW.text" = "Email :";
+
+/* Class = "UITabBarItem"; title = "Physiotherapist"; ObjectID = "BxJ-2D-dWj"; */
+"BxJ-2D-dWj.title" = "Physiotherapist";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "CHJ-zH-5Rw"; */
+"CHJ-zH-5Rw.text" = "name";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "CRS-PQ-8zX"; */
+"CRS-PQ-8zX.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "Em2-5m-UGV"; */
+"Em2-5m-UGV.normalTitle" = "Sign In";
+
+/* Class = "UILabel"; text = "If you wish to join the family of the “PhysioHome” application, please send an e-mail message containing the following data"; ObjectID = "Eve-Qw-CJY"; */
+"Eve-Qw-CJY.text" = "If you wish to join the family of the “PhysioHome” application, please send an e-mail message containing the following data";
+
+/* Class = "UITextField"; placeholder = "Phone"; ObjectID = "Hgm-Aq-uXi"; */
+"Hgm-Aq-uXi.placeholder" = "Phone";
+
+/* Class = "UITextField"; placeholder = "Write Name"; ObjectID = "ICK-NF-KPy"; */
+"ICK-NF-KPy.placeholder" = "Write Name";
+
+/* Class = "UITextField"; placeholder = "Gender"; ObjectID = "Oyb-Oq-B7N"; */
+"Oyb-Oq-B7N.placeholder" = "Gender";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "SdI-tR-CvK"; */
+"SdI-tR-CvK.text" = "Label";
+
+/* Class = "UITabBarItem"; title = " Appointments"; ObjectID = "TNl-8a-E7d"; */
+"TNl-8a-E7d.title" = " Appointments";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "U6R-yN-LKl"; */
+"U6R-yN-LKl.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "VDx-tw-apk"; */
+"VDx-tw-apk.text" = "Label";
+
+/* Class = "UITextField"; placeholder = "Email"; ObjectID = "WHn-Kn-FLf"; */
+"WHn-Kn-FLf.placeholder" = "Email";
+
+/* Class = "UITextField"; placeholder = "age"; ObjectID = "Y7C-yR-GTD"; */
+"Y7C-yR-GTD.placeholder" = "age";
+
+/* Class = "UIButton"; normalTitle = "Reservation"; ObjectID = "YUt-Lw-0Jb"; */
+"YUt-Lw-0Jb.normalTitle" = "Reservation";
+
+/* Class = "UILabel"; text = "Session Packages :"; ObjectID = "Z5C-dF-Hjn"; */
+"Z5C-dF-Hjn.text" = "Session Packages :";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "cBx-6N-ZUm"; */
+"cBx-6N-ZUm.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "eza-g7-iXY"; */
+"eza-g7-iXY.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "gBr-L3-Sec"; */
+"gBr-L3-Sec.text" = "Label";
+
+/* Class = "UILabel"; text = "Salshahrani153@gmail.com"; ObjectID = "gvC-cW-yR1"; */
+"gvC-cW-yR1.text" = "Salshahrani153@gmail.com";
+
+/* Class = "UITextField"; placeholder = "Location"; ObjectID = "gyV-Bm-Zeq"; */
+"gyV-Bm-Zeq.placeholder" = "Location";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "imn-v3-Vr3"; */
+"imn-v3-Vr3.text" = "name";
+
+/* Class = "UILabel"; text = "Phone :"; ObjectID = "j2h-7s-29W"; */
+"j2h-7s-29W.text" = "Phone :";
+
+/* Class = "UIButton"; normalTitle = "SignUp"; ObjectID = "jg7-LS-efE"; */
+"jg7-LS-efE.normalTitle" = "SignUp";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "kFl-V3-SVs"; */
+"kFl-V3-SVs.text" = "Label";
+
+/* Class = "UILabel"; text = "Please contact via e-mail"; ObjectID = "mNY-6M-aO2"; */
+"mNY-6M-aO2.text" = "Please contact via e-mail";
+
+/* Class = "UILabel"; text = "name"; ObjectID = "n8G-DG-pNn"; */
+"n8G-DG-pNn.text" = "name";
+
+/* Class = "UILabel"; text = "Welcome"; ObjectID = "oAy-fm-TQx"; */
+"oAy-fm-TQx.text" = "Welcome";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oZU-v5-KFE"; */
+"oZU-v5-KFE.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "s9V-oO-XCc"; */
+"s9V-oO-XCc.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "v4b-nc-hc9"; */
+"v4b-nc-hc9.text" = "Label";
+
+/* Class = "UIButton"; normalTitle = "Sign In"; ObjectID = "vxJ-io-Dmv"; */
+"vxJ-io-Dmv.normalTitle" = "Sign In";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "zVm-Ns-Zbv"; */
+"zVm-Ns-Zbv.text" = "Label";

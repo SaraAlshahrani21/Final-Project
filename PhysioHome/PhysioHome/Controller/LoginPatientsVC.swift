@@ -8,7 +8,16 @@
 import UIKit
 import Firebase
 
-class LoginPatientsVC: UIViewController {
+class LoginPatientsVC: UIViewController, UITextFieldDelegate{
+    
+    
+    
+    struct Task {
+        var taskTitle: String?
+        var isChecked = false
+    }
+    var taskArray = [Task] ()
+    var indexpath: IndexPath!
     
     @IBOutlet weak var signup: UIButton!
     @IBOutlet var txtEmail: UITextField!
@@ -21,7 +30,16 @@ class LoginPatientsVC: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         view.backgroundColor = UIColor(named: "backgroundColor")
+        txtEmail.text = "s@gmail.com"
+        txtPassword.text = "123456"
+        login.setTitle(NSLocalizedString("ss", comment: ""), for: .normal)
+        signup.setTitle(NSLocalizedString("SS", comment: ""), for: .normal)
+        txtEmail.placeholder = NSLocalizedString("mail", comment: "")
+        txtPassword.placeholder = NSLocalizedString("pass", comment: "")
+        txtPassword.delegate = self
     }
+
+
     
     
     // LogIn users
@@ -36,32 +54,19 @@ class LoginPatientsVC: UIViewController {
           }
           Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
-                self.lable.text = "Error,please click on SignUp"
+                self.lable.text = NSLocalizedString("error", comment: "")
               print(error as Any)
               return
             }
               self.performSegue(withIdentifier: "12345", sender:nil)
           }
           func alertUserLoginError() {
-            let alert = UIAlertController(title: "❤︎", message: "Please enter your Email & Password To LogIn", preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "OK", style: .cancel , handler: nil))
+            let alert = UIAlertController(title: "❤︎", message: NSLocalizedString("enter", comment: ""), preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .cancel , handler: nil))
             present(alert, animated: true)
           }
         }
       
-//
-//
-//        Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
-//            guard let strongSelf = self else { return }
-//            if(error != nil) {
-//                strongSelf.lblStatus.text = "Error, check username and password"
-//                print(error as Any)
-//                return
-//            }
-//            strongSelf.lblStatus.text = "Login sucesss for email \(email)"
-//        }
-//
-//    }
     
     // SignUp users
     @IBAction func creataccount(_ sender: Any) {
@@ -80,23 +85,20 @@ class LoginPatientsVC: UIViewController {
          }
        }
        func alertUserLoginError2() {
-         let alert = UIAlertController(title: "❤︎", message: "Please enter your Email & Password To signUp", preferredStyle: .alert)
-         alert.addAction(UIAlertAction(title: "OK", style: .cancel , handler: nil))
+         let alert = UIAlertController(title: "❤︎", message: NSLocalizedString("ent", comment: "") , preferredStyle: .alert)
+         alert.addAction(UIAlertAction(title: "ok", style: .cancel , handler: nil))
          present(alert, animated: true)
        }
      }
 
-    
-//        Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-//            if(error != nil) {
-//                self.lable.text = "Error"
-//                print(error as Any)
-//                return
-//            }
-//            self.lable.text = "User created!"
-//        }
-//    }
-    
+   
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+            let update = Task(taskTitle: txtPassword.text, isChecked: taskArray[indexpath.row].isChecked)
+            
+            taskArray[indexpath.row] = update
+        txtPassword.resignFirstResponder()
+            return true
+        }
     
 }
 
