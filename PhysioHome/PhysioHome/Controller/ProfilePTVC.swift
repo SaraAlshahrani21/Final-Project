@@ -7,16 +7,12 @@
 
 import UIKit
 
-
-
 class ProfilePTVC : UIViewController {
     var FromVC1: PT?
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
-        view.backgroundColor = UIColor(named: "backgroundColor")
         
         namePT.text = FromVC1?.name
         ratingPT.text = FromVC1!.rating
@@ -35,9 +31,9 @@ class ProfilePTVC : UIViewController {
     @IBOutlet weak var TableVC: UITableView!
     
 }
- 
 
-  // extension of class
+
+// extension of class
 extension ProfilePTVC : UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return FromVC1?.sessions.count ?? 0

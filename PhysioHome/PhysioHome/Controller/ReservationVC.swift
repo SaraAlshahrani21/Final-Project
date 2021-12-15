@@ -59,8 +59,8 @@ class ReservationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
     @IBOutlet weak var scheduler: UIDatePicker!
     let genderr = UIPickerView()
     var arrgender = [
-        "Male",
-        "Female"
+        NSLocalizedString("Male", comment: ""),
+        NSLocalizedString("Female", comment: "")
     ]
     
     @IBOutlet weak var TitleSession: UILabel!
@@ -103,12 +103,12 @@ class ReservationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
             "date" :scheduler.date as Any,
         ],merge: true)
         let alert1 = UIAlertController(
-            title: ("Wonderful"),
-            message: "Appointment booked successfully",
+            title: NSLocalizedString("Wonderful", comment: ""),
+            message: NSLocalizedString("Appointment booked successfully", comment: ""),
             preferredStyle: .alert)
         alert1.addAction(
             UIAlertAction(
-                title: "OK",
+                title: NSLocalizedString("ok", comment: ""),
                 style: .cancel ,
                 handler: { action in
                     print("OK")
@@ -117,7 +117,7 @@ class ReservationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
         )
         alert1.addAction(
             UIAlertAction(
-                title: "Go to appointments",
+                title: NSLocalizedString("Go to appointments", comment: ""),
                 style: .default,
                 handler: { action in
                     print("OK")
@@ -130,8 +130,14 @@ class ReservationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        
         setupButtons()
+        
+        nameTF.delegate = self
+        ageTF.delegate = self
+        phoneTF.delegate = self
+        locationTF.delegate = self
+        gender.delegate = self
         
         
         TitleSession.text = restFromVC1?.title
@@ -146,7 +152,7 @@ class ReservationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
         gender.inputView = genderr
         let toolBar = UIToolbar()
         toolBar.sizeToFit()
-        let btnDone = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(closePicker))
+        let btnDone = UIBarButtonItem(title: NSLocalizedString("Done", comment: ""), style: .plain, target: self, action: #selector(closePicker))
         toolBar.setItems([btnDone], animated: true)
         gender.inputView = genderr
         gender.inputAccessoryView = toolBar
@@ -167,6 +173,16 @@ class ReservationVC: UIViewController, UITextFieldDelegate, UIPickerViewDelegate
                 self.locationTF.text = doucument?.data()?["location"] as? String
                 self.scheduler.date = doucument?.data()?["date"] as? Date ?? Date()
             }
+    }
+    
+    //function of return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        nameTF.resignFirstResponder()
+        ageTF.resignFirstResponder()
+        phoneTF.resignFirstResponder()
+        locationTF.resignFirstResponder()
+        gender.resignFirstResponder()
+        return true
     }
     
     

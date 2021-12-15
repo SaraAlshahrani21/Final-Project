@@ -18,15 +18,37 @@ class RegisterVc: UIViewController{
     @IBOutlet weak var registerPT: UIButton!
     
     
+    
+    //image
+    lazy var imageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.image = UIImage(named: "phhh")
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.layer.cornerRadius = 30
+        return imageView
+      }()
+   
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "backgroundColor")
-      
+       
+        
         //localizable
         welcomlbl.text = NSLocalizedString("welcome", comment: "")
         registerPatients.setTitle(NSLocalizedString("Register", comment: ""), for: .normal)
         registerPT.setTitle(NSLocalizedString("register", comment: ""), for: .normal)
         
+        
+        
+        //constraint
+        view.addSubview(imageView)
+        NSLayoutConstraint.activate([ imageView.topAnchor.constraint(equalTo: view.topAnchor, constant:100),
+        imageView.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -100),
+        imageView.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 100),
+        imageView.heightAnchor.constraint(equalToConstant: 200),
+        imageView.widthAnchor.constraint(equalToConstant: 600),
+      
+        ])
         
         
         //gesture recognizer page
@@ -42,7 +64,6 @@ class RegisterVc: UIViewController{
     
     
     @objc func background() {
-        
         view.backgroundColor = UIColor (named: "background")
     }
     

@@ -40,3 +40,52 @@
 "ok" = "OK" ;
 "ent" = "Please enter your Email & Password To signUp" ;
 
+//PT struct
+"Saeed Alqahtani" = "Saeed Alqahtani" ;
+"Physiotherapist from Saturday to Tuesday from 8 pm to 12 am - Wednesday - Friday from 3 pm to 9 pm.  There are electrical appliances." = "Physiotherapist from Saturday to Tuesday from 8 pm to 12 am - Wednesday - Friday from 3 pm to 9 pm.  There are electrical appliances." ;
+"★★★★✩" = "★★★★✩" ;
+"Sara Alshahrani" = "Sara Alshahrani" ;
+"Rehabilitation of joint injuries" = "Rehabilitation of joint injuries" ;
+"🕘 Duration: an hour" = "🕘 Duration: an hour" ;
+"💵 Cost: 200 riyals" = "💵 Cost: 200 riyals" ;
+"🗒 Number of sessions: 1" = "🗒 Number of sessions: 1" ;
+"Physical preparation program for athletes (women)" = "Physical preparation program for athletes (women)" ;
+"Post-operative rehabilitation" = "Post-operative rehabilitation" ;
+"Physiotherapist from Sunday to Thursday from 9 am to 9 pm" = "Physiotherapist from Sunday to Thursday from 9 am to 9 pm" ;
+"★★★✩✩" = "★★★✩✩" ;
+"Stroke rehabilitation" = "Stroke rehabilitation" ;
+"Muscular injury rehabilitation" = "Muscular injury rehabilitation" ;
+"lower back pain" = "lower back pain" ;
+"🕘 Duration: half an hour" = "🕘 Duration: half an hour" ;
+"Stroke rehabilitation course" = "Stroke rehabilitation course" ;
+"💵 Cost: 2000 riyals" = "💵 Cost: 2000 riyals" ;
+"🗒 Number of sessions: 10" = "🗒 Number of sessions: 10" ;
+"Aisha alahmri" = "Aisha alahmri" ;
+"Physiotherapist Tuesday and Thursday from 8 am to 1 pm" = "Physiotherapist Tuesday and Thursday from 8 am to 1 pm" ;
+"stadium injuries" = "stadium injuries" ;
+"💵 Cost: 150 riyals" = "💵 Cost: 150 riyals" ;
+"Diagnostic session" = "Diagnostic session" ;
+"Post-stroke rehabilitation" = "Post-stroke rehabilitation" ;
+"🕘 Duration: an hour and a half" = "🕘 Duration: an hour and a half" ;
+"Khalid Saad" = "Khalid Saad" ;
+"Physiotherapist from Saturday to Tuesday from 9 pm to 12 am - Wednesday - Friday from 5 pm to 9 pm.  There are electrical appliances." = "Physiotherapist from Saturday to Tuesday from 9 pm to 12 am - Wednesday - Friday from 5 pm to 9 pm.  There are electrical appliances." ;
+"★★✩✩✩" = "★★✩✩✩" ;
+"Several medical rehabilitation sessions for children with cerebral palsy" = "Several medical rehabilitation sessions for children with cerebral palsy" ;
+"💵 Cost: 180 riyals" = "💵 Cost: 180 riyals" ;
+"Medical rehabilitation session for children with cerebral palsy" = "Medical rehabilitation session for children with cerebral palsy" ;
+"Medical rehabilitation session for children with cerebral palsy" = "Medical rehabilitation session for children with cerebral palsy" ;
+"🕘 Duration: an hour and a half" = "🕘 Duration: an hour and a half" ;
+"💵 Cost: 250 riyals" = "💵 Cost: 250 riyals" ;
+"Asma Mohammed" = "Asma Mohammed" ;
+"Physiotherapist Tuesday and Thursday from 8 am to 1 pm" = "Physiotherapist Tuesday and Thursday from 8 am to 1 pm" ;
+"Spinal cord injuries" = "Spinal cord injuries" ;
+"Intensive therapeutic exercises and rehabilitation for children with cerebral palsy and spinal cord injuries" = "Intensive therapeutic exercises and rehabilitation for children with cerebral palsy and spinal cord injuries" ;
+
+//alert
+"Wonderful" = "Wonderful" ;
+"Appointment booked successfully" = "Appointment booked successfully" ;
+"Go to appointments" = "Go to appointments" ;
+
+"Male" = "Male" ;
+"Female" = "Female" ;
+"Done" = "Done" ;

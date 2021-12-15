@@ -37,136 +37,136 @@ struct Session {
 
 var ptS : Array<PT> = [
     PT(
-        name: "Saeed Alqahtani",
-        dis: "Physiotherapist from Saturday to Tuesday from 8 pm to 12 am - Wednesday - Friday from 3 pm to 9 pm.  There are electrical appliances.",
-        rating: "★★★★✩",
-        logo: UIImage (named: "1"),
+        name: NSLocalizedString("Saeed Alqahtani", comment: ""),
+        dis: NSLocalizedString("Physiotherapist from Saturday to Tuesday from 8 pm to 12 am - Wednesday - Friday from 3 pm to 9 pm.  There are electrical appliances.", comment: ""),
+        rating: NSLocalizedString("★★★★✩", comment: ""),
+        logo: UIImage (named:"1"),
         sessions: [
    Session (
-         title: "Rehabilitation of joint injuries",
-         logo: UIImage(named: "55"),
-         time: "🕘 Duration: an hour",
-         price: "💵 Cost: 200 riyals",
-         numberOfsession:"🗒 Number of sessions: 1"),
+         title: NSLocalizedString("Rehabilitation of joint injuries", comment: ""),
+         logo: UIImage(named:"55"),
+         time: NSLocalizedString("🕘 Duration: an hour", comment: ""),
+         price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+         numberOfsession:NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
    Session(
-         title: "Physical preparation program for athletes (women)",
+         title: NSLocalizedString("Physical preparation program for athletes (women)", comment: ""),
          logo: UIImage(named: "55"),
-         time: "🕘 Duration: an hour",
-         price: "💵 Cost: 200 riyals",
-         numberOfsession: "🗒 Number of sessions: 1"),
+         time: NSLocalizedString("🕘 Duration: an hour", comment: ""),
+         price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+         numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
     Session(
-            title: "Post-operative rehabilitation",
+            title: NSLocalizedString("Post-operative rehabilitation", comment: ""),
             logo: UIImage(named: "55"),
-            time: "🕘 Duration: an hour",
-            price: "💵 Cost: 200 riyals",
-            numberOfsession: "🗒 Number of sessions: 1")] ),
+            time: NSLocalizedString("🕘 Duration: an hour", comment: ""),
+            price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+            numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: ""))] ),
     
    
     
     PT(
-        name: "Sara Alshahrani",
-        dis: "Physiotherapist from Sunday to Thursday from 9 am to 9 pm",
-        rating: "★★★✩✩",
+        name: NSLocalizedString("Sara Alshahrani", comment: ""),
+        dis: NSLocalizedString("Physiotherapist from Sunday to Thursday from 9 am to 9 pm", comment: ""),
+        rating: NSLocalizedString("★★★✩✩", comment: ""),
         logo: UIImage(named: "2"),
         sessions: [
             Session (
-                  title: "Stroke rehabilitation",
+                  title: NSLocalizedString("Stroke rehabilitation", comment: ""),
                   logo: UIImage(named: "55"),
-                  time: "🕘 Duration: an hour",
-                  price: "💵 Cost: 200 riyals",
-                  numberOfsession: "🗒 Number of sessions: 1"),
+                  time:NSLocalizedString("🕘 Duration: an hour", comment: ""),
+                  price:NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+                  numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
             Session(
-                title: "Muscular injury rehabilitation",
+                title: NSLocalizedString("Muscular injury rehabilitation", comment: ""),
                 logo: UIImage(named: "55"),
-                time: "🕘 Duration: an hour",
-                price: "💵 Cost: 200 riyals",
-                numberOfsession: "🗒 Number of sessions: 1"),
+                time: NSLocalizedString("🕘 Duration: an hour", comment: ""),
+                price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+                numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
             Session(
-                title: "lower back pain",
+                title:NSLocalizedString( "lower back pain", comment: ""),
                 logo: UIImage(named: "55"),
-                time: "🕘 Duration: half an hour",
-                price: "💵 Cost: 200 riyals",
-                numberOfsession: "🗒 Number of sessions: 1"),
+                time: NSLocalizedString("🕘 Duration: half an hour", comment: ""),
+                price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+                numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
             Session(
-                title: "Stroke rehabilitation course",
+                title: NSLocalizedString("Stroke rehabilitation course", comment: ""),
                 logo: UIImage(named: "55"),
-                time: "🕘 Duration: an hour",
-                price: "💵 Cost: 2000 riyals",
-                numberOfsession: "🗒 Number of sessions: 10")] ),
+                time:  NSLocalizedString("🕘 Duration: an hour", comment: ""),
+                price: NSLocalizedString("💵 Cost: 2000 riyals", comment: ""),
+                numberOfsession: NSLocalizedString("🗒 Number of sessions: 10", comment: ""))] ),
     
    
     
     PT(
-        name: "Aisha alahmri",
-        dis: "Physiotherapist Tuesday and Thursday from 8 am to 1 pm",
-        rating: "★★★✩✩",
+        name: NSLocalizedString("Aisha alahmri", comment: ""),
+        dis: NSLocalizedString("Physiotherapist Tuesday and Thursday from 8 am to 1 pm", comment: ""),
+        rating: NSLocalizedString("★★★✩✩", comment: ""),
         logo: UIImage(named: "3"),
         sessions: [
             Session (
-                  title: "stadium injuries",
+                  title:NSLocalizedString( "stadium injuries", comment: ""),
                   logo: UIImage(named: "55"),
-                  time:  "🕘 Duration: an hour",
-                  price:"💵 Cost: 150 riyals",
-                  numberOfsession: "🗒 Number of sessions: 1"),
+                  time: NSLocalizedString("🕘 Duration: an hour", comment: ""),
+                  price:NSLocalizedString("💵 Cost: 150 riyals", comment: ""),
+                  numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
             Session(
-                title: "Diagnostic session",
+                title: NSLocalizedString("Diagnostic session", comment: ""),
                 logo: UIImage(named: "55"),
-                time:"🕘 Duration: an hour",
-                price: "💵 Cost: 150 riyals",
-                numberOfsession: "🗒 Number of sessions: 1"),
+                time:NSLocalizedString("🕘 Duration: an hour", comment: ""),
+                price: NSLocalizedString("💵 Cost: 150 riyals", comment: ""),
+                numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
             Session(
-                title: "Post-stroke rehabilitation",
+                title: NSLocalizedString("Post-stroke rehabilitation", comment: ""),
                 logo: UIImage(named: "55"),
-                time: "🕘 Duration: an hour and a half",
-                price: "💵 Cost: 200 riyals",
-                numberOfsession: "🗒 Number of sessions: 1")] ),
+                time: NSLocalizedString("🕘 Duration: an hour and a half", comment: ""),
+                price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+                numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: ""))] ),
     
    
     
-    PT(name: "Khalid Saad",
-       dis: "Physiotherapist from Saturday to Tuesday from 9 pm to 12 am - Wednesday - Friday from 5 pm to 9 pm.  There are electrical appliances.",
-       rating: "★★✩✩✩",
+    PT(name: NSLocalizedString("Khalid Saad", comment: ""),
+       dis:NSLocalizedString( "Physiotherapist from Saturday to Tuesday from 9 pm to 12 am - Wednesday - Friday from 5 pm to 9 pm.  There are electrical appliances.", comment: ""),
+       rating: NSLocalizedString("★★✩✩✩", comment: ""),
        logo: UIImage(named: "4"),
        sessions: [
   Session (
-        title: "Several medical rehabilitation sessions for children with cerebral palsy",
+        title: NSLocalizedString("Several medical rehabilitation sessions for children with cerebral palsy", comment: ""),
         logo: UIImage(named: "55"),
-        time: "🕘 Duration: an hour",
-        price: "💵 Cost: 180 riyals",
-        numberOfsession: "🗒 Number of sessions: 10"),
+        time:NSLocalizedString( "🕘 Duration: an hour", comment: ""),
+        price: NSLocalizedString("💵 Cost: 180 riyals", comment: ""),
+        numberOfsession: NSLocalizedString("🗒 Number of sessions: 10", comment: "")),
   Session(
-            title: "Medical rehabilitation session for children with cerebral palsy",
+            title: NSLocalizedString("Medical rehabilitation session for children with cerebral palsy", comment: ""),
             logo: UIImage(named: "55"),
-            time: "🕘 Duration: an hour",
-            price: "💵 Cost: 200 riyals",
-            numberOfsession: "🗒 Number of sessions: 1"),
+            time: NSLocalizedString("🕘 Duration: an hour", comment: ""),
+            price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+            numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
   Session(
-                title: "Medical rehabilitation session for children with cerebral palsy",
+                title: NSLocalizedString("Medical rehabilitation session for children with cerebral palsy", comment: ""),
                 logo: UIImage(named: "55"),
-                time: "🕘 Duration: an hour and a half",
-                price: "💵 Cost: 250 riyals",
-                numberOfsession: "🗒 Number of sessions: 1")] ),
+                time: NSLocalizedString("🕘 Duration: an hour and a half", comment: ""),
+                price: NSLocalizedString("💵 Cost: 250 riyals", comment: ""),
+                numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: ""))] ),
     
    
 
     PT(
-        name: "Asma Mohammed",
-        dis: "Physiotherapist Tuesday and Thursday from 8 am to 1 pm",
-        rating: "★★✩✩✩",
+        name: NSLocalizedString("Asma Mohammed", comment: ""),
+        dis: NSLocalizedString("Physiotherapist Tuesday and Thursday from 8 am to 1 pm", comment: ""),
+        rating: NSLocalizedString("★★✩✩✩", comment: ""),
         logo: UIImage(named: "5"),
         sessions: [
         Session(
-                title: "Spinal cord injuries",
+                title: NSLocalizedString("Spinal cord injuries", comment: ""),
                 logo: UIImage(named: "55"),
-                time: "🕘 Duration: an hour and a half",
-                price: "💵 Cost: 200 riyals",
-                numberOfsession: "🗒 Number of sessions: 1"),
+                time: NSLocalizedString("🕘 Duration: an hour and a half", comment: ""),
+                price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+                numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: "")),
         Session(
-                    title: "Intensive therapeutic exercises and rehabilitation for children with cerebral palsy and spinal cord injuries",
+                    title: NSLocalizedString("Intensive therapeutic exercises and rehabilitation for children with cerebral palsy and spinal cord injuries", comment: ""),
                     logo: UIImage(named: "55"),
-                    time: "🕘 Duration: an hour",
-                    price: "💵 Cost: 200 riyals",
-                    numberOfsession: "🗒 Number of sessions: 1")
+                    time: NSLocalizedString("🕘 Duration: an hour", comment: ""),
+                    price: NSLocalizedString("💵 Cost: 200 riyals", comment: ""),
+                    numberOfsession: NSLocalizedString("🗒 Number of sessions: 1", comment: ""))
   ] )
 ]
 

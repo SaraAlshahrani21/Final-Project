@@ -17,7 +17,7 @@ class RegisterPhysiotherapistVC: UIViewController {
     @IBOutlet weak var label5: UILabel!
     @IBOutlet weak var label6: UILabel!
     @IBOutlet weak var label7: UILabel!
-   
+    
     
     
     override func viewDidLoad() {

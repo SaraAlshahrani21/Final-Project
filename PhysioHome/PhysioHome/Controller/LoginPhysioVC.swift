@@ -7,7 +7,7 @@
 
 import UIKit
 
-class LoginPhysioVC: UIViewController {
+class LoginPhysioVC: UIViewController, UITextFieldDelegate{
     
     
     @IBOutlet weak var welcome: UILabel!
@@ -19,7 +19,9 @@ class LoginPhysioVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        
+        EmailPT.delegate = self
+        PasswordPT.delegate = self
         
         welcome.text = NSLocalizedString("wolcome", comment: "")
         signIn.setTitle(NSLocalizedString("sign", comment: ""), for: .normal)
@@ -27,4 +29,12 @@ class LoginPhysioVC: UIViewController {
         PasswordPT.placeholder = NSLocalizedString("password", comment: "")
         
     }
+    
+    //function of return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        EmailPT.resignFirstResponder()
+        PasswordPT.resignFirstResponder()
+        return true
+    }
+    
 }

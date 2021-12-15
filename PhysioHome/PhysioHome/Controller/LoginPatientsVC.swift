@@ -28,8 +28,13 @@ class LoginPatientsVC: UIViewController, UITextFieldDelegate{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        txtEmail.delegate = self
+        txtPassword.delegate = self
+        
         // Do any additional setup after loading the view, typically from a nib.
-        view.backgroundColor = UIColor(named: "backgroundColor")
+        
+        //localizable
         txtEmail.text = "s@gmail.com"
         txtPassword.text = "123456"
         login.setTitle(NSLocalizedString("ss", comment: ""), for: .normal)
@@ -38,8 +43,8 @@ class LoginPatientsVC: UIViewController, UITextFieldDelegate{
         txtPassword.placeholder = NSLocalizedString("pass", comment: "")
         txtPassword.delegate = self
     }
-
-
+    
+    
     
     
     // LogIn users
@@ -51,54 +56,52 @@ class LoginPatientsVC: UIViewController, UITextFieldDelegate{
         if email.isEmpty || password.isEmpty {
             alertUserLoginError()
             return
-          }
-          Auth.auth().signIn(withEmail: email, password: password) { result, error in
+        }
+        Auth.auth().signIn(withEmail: email, password: password) { result, error in
             if error != nil {
                 self.lable.text = NSLocalizedString("error", comment: "")
-              print(error as Any)
-              return
+                print(error as Any)
+                return
             }
-              self.performSegue(withIdentifier: "12345", sender:nil)
-          }
-          func alertUserLoginError() {
+            self.performSegue(withIdentifier: "12345", sender:nil)
+        }
+        func alertUserLoginError() {
             let alert = UIAlertController(title: "❤︎", message: NSLocalizedString("enter", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .cancel , handler: nil))
             present(alert, animated: true)
-          }
         }
-      
+    }
+    
     
     // SignUp users
     @IBAction func creataccount(_ sender: Any) {
         let email = txtEmail.text!
         let password = txtPassword.text!
-    
-    if email.isEmpty || password.isEmpty {
-        alertUserLoginError2()
-         return
-       }
-       Auth.auth().createUser(withEmail: email, password: password //type: self.type ?? "0"
-       ) { result, error in
-         if error != nil {
-           print(error as Any)
-           return
-         }
-       }
-       func alertUserLoginError2() {
-         let alert = UIAlertController(title: "❤︎", message: NSLocalizedString("ent", comment: "") , preferredStyle: .alert)
-         alert.addAction(UIAlertAction(title: "ok", style: .cancel , handler: nil))
-         present(alert, animated: true)
-       }
-     }
-
-   
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-            let update = Task(taskTitle: txtPassword.text, isChecked: taskArray[indexpath.row].isChecked)
-            
-            taskArray[indexpath.row] = update
-        txtPassword.resignFirstResponder()
-            return true
+        
+        if email.isEmpty || password.isEmpty {
+            alertUserLoginError2()
+            return
         }
+        Auth.auth().createUser(withEmail: email, password: password //type: self.type ?? "0"
+        ) { result, error in
+            if error != nil {
+                print(error as Any)
+                return
+            }
+        }
+        func alertUserLoginError2() {
+            let alert = UIAlertController(title: "❤︎", message: NSLocalizedString("ent", comment: "") , preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("ok", comment: ""), style: .cancel , handler: nil))
+            present(alert, animated: true)
+        }
+    }
+    
+    //function of return
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        txtEmail.resignFirstResponder()
+        txtPassword.resignFirstResponder()
+        return true
+    }
     
 }
 

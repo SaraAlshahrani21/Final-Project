@@ -18,7 +18,6 @@ class AppointmentVC: UIViewController{
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(named: "backgroundColor")
         table.delegate = self
         table.dataSource = self
         table.rowHeight = 170

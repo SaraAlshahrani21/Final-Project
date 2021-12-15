@@ -13,8 +13,8 @@ protocol searchbar {
 
 class PhysiotherapistVC: UIViewController,UICollectionViewDelegate, UICollectionViewDataSource,UICollectionViewDelegateFlowLayout,
                          UISearchBarDelegate, searchbar {
-
-
+    
+    
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var picCV: UICollectionView!
     
@@ -91,8 +91,6 @@ class PhysiotherapistVC: UIViewController,UICollectionViewDelegate, UICollection
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        view.backgroundColor = UIColor(named: "backgroundColor")
         
         picCV.delegate = self
         picCV.dataSource = self

@@ -17,7 +17,6 @@ class ProfilePTCell :UITableViewCell {
     @IBOutlet weak var timeSession: UILabel!
     @IBOutlet weak var priceSession: UILabel!
     @IBOutlet weak var numberOfSession: UILabel!
-    @IBAction func addsession(_ sender: Any) {
-    }
+
 }
 

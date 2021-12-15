@@ -13,12 +13,11 @@ class RegisterPTVC: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var newregister: UIButton!
     @IBOutlet weak var login: UIButton!
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       // view.backgroundColor = UIColor(named: "backgroundColor")
-      
+
         //localizable
         newregister.setTitle(NSLocalizedString("new", comment: ""), for: .normal)
         login.setTitle(NSLocalizedString("login", comment: ""), for: .normal)

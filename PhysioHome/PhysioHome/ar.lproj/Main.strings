@@ -51,7 +51,7 @@
 "Bht-jV-WZW.text" = "Email :";
 
 /* Class = "UITabBarItem"; title = "Physiotherapist"; ObjectID = "BxJ-2D-dWj"; */
-"BxJ-2D-dWj.title" = "Physiotherapist";
+"BxJ-2D-dWj.title" = "الاخصائيين";
 
 /* Class = "UILabel"; text = "name"; ObjectID = "CHJ-zH-5Rw"; */
 "CHJ-zH-5Rw.text" = "name";
@@ -66,19 +66,19 @@
 "Eve-Qw-CJY.text" = "If you wish to join the family of the “PhysioHome” application, please send an e-mail message containing the following data";
 
 /* Class = "UITextField"; placeholder = "Phone"; ObjectID = "Hgm-Aq-uXi"; */
-"Hgm-Aq-uXi.placeholder" = "Phone";
+"Hgm-Aq-uXi.placeholder" = "رقمك";
 
 /* Class = "UITextField"; placeholder = "Write Name"; ObjectID = "ICK-NF-KPy"; */
-"ICK-NF-KPy.placeholder" = "Write Name";
+"ICK-NF-KPy.placeholder" = "اسمك";
 
 /* Class = "UITextField"; placeholder = "Gender"; ObjectID = "Oyb-Oq-B7N"; */
-"Oyb-Oq-B7N.placeholder" = "Gender";
+"Oyb-Oq-B7N.placeholder" = "النوع";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "SdI-tR-CvK"; */
 "SdI-tR-CvK.text" = "Label";
 
 /* Class = "UITabBarItem"; title = " Appointments"; ObjectID = "TNl-8a-E7d"; */
-"TNl-8a-E7d.title" = " Appointments";
+"TNl-8a-E7d.title" = "المواعيد";
 
 /* Class = "UILabel"; text = "Label"; ObjectID = "U6R-yN-LKl"; */
 "U6R-yN-LKl.text" = "Label";
@@ -90,10 +90,10 @@
 "WHn-Kn-FLf.placeholder" = "Email";
 
 /* Class = "UITextField"; placeholder = "age"; ObjectID = "Y7C-yR-GTD"; */
-"Y7C-yR-GTD.placeholder" = "age";
+"Y7C-yR-GTD.placeholder" = "عمرك";
 
 /* Class = "UIButton"; normalTitle = "Reservation"; ObjectID = "YUt-Lw-0Jb"; */
-"YUt-Lw-0Jb.normalTitle" = "Reservation";
+"YUt-Lw-0Jb.normalTitle" = "حجز";
 
 /* Class = "UILabel"; text = "Session Packages :"; ObjectID = "Z5C-dF-Hjn"; */
 "Z5C-dF-Hjn.text" = "Session Packages :";
@@ -111,7 +111,7 @@
 "gvC-cW-yR1.text" = "Salshahrani153@gmail.com";
 
 /* Class = "UITextField"; placeholder = "Location"; ObjectID = "gyV-Bm-Zeq"; */
-"gyV-Bm-Zeq.placeholder" = "Location";
+"gyV-Bm-Zeq.placeholder" = "موقعك";
 
 /* Class = "UILabel"; text = "name"; ObjectID = "imn-v3-Vr3"; */
 "imn-v3-Vr3.text" = "name";
